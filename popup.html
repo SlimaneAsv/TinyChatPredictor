@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Predictor</title>
+</head>
+<body>
+  <h3>Word Predictor Settings</h3>
+  <p>Enable or disable the predictor here:</p>
+  <label>
+    <input type="checkbox" id="togglePredictor" checked> Enable Predictor
+  </label>
+  <script>
+    const toggleCheckbox = document.getElementById('togglePredictor');
+    toggleCheckbox.addEventListener('change', () => {
+      chrome.storage.local.set({ enabled: toggleCheckbox.checked });
+    });
+  </script>
+</body>
+</html>
