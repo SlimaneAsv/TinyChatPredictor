@@ -72,7 +72,7 @@ class TinyChatPredictor:
 predictor = TinyChatPredictor()
 
 # Load phrases from a file
-filename = 'written_habits.txt'  # This file should contain phrases on each line.
+filename = 'written_habits.txt'  # This is the 'I have a dream' speech from MLK. You can change it as will
 predictor.load_phrases(filename)
 
 # Prompting the user to input their starting phrase
